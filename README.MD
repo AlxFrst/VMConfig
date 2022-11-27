@@ -4,12 +4,12 @@ If you have any question or suggestion, please contact me at [email protected]
 
 Let's start 🚀
 
-## Environment
+### Environment
 - OS: Ubuntu 20.04
 - Desktop Environment: Gnome
 - Shell: Zsh
 
-### Zsh & Git
+## Zsh & Git
 
 Instead of using the default `bash` [shell](https://en.wikipedia.org/wiki/Shell_(computing)), we will use `zsh`.
 
@@ -31,7 +31,7 @@ These commands will ask for your password: type it in.
 
 :warning: When you type your password, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your password as a whole but also its length. Just type in your password and when you're done, press `Enter`.
 
-### GitHub CLI installation
+## GitHub CLI installation
 
 Let's now install [GitHub official CLI](https://cli.github.com) (Command Line Interface). It's a software used to interact with your GitHub account via the command line.
 
@@ -53,7 +53,7 @@ gh --version
 
 :heavy_check_mark: If you see `gh version X.Y.Z (YYYY-MM-DD)`, you're good to go :+1:
 
-## GitHub CLI
+### GitHub CLI
 
 CLI is the acronym of [Command-line Interface](https://en.wikipedia.org/wiki/Command-line_interface).
 
@@ -102,7 +102,69 @@ gh auth status
 
 :heavy_check_mark: If you get `Logged in to github.com as <YOUR USERNAME> `, then all good :+1:
 
-:x: If not, **contact a teacher**.
+## Node.js
+
+[Node.js](https://nodejs.org/en/) is a JavaScript runtime to execute JavaScript code in the terminal. Let's install it with [nvm](https://github.com/nvm-sh/nvm), a version manager for Node.js.
+
+In a terminal, execute the following commands:
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | zsh
+exec zsh
+```
+
+Then run the following command:
+
+```bash
+nvm -v
+```
+
+You should see a version. If not, ask a teacher.
+
+Now let's install node:
+
+```bash
+nvm install 16.15.1
+```
+
+When the installation is finished, run:
+
+```bash
+node -v
+```
+
+If you see `v16.15.1`, the installation succeeded :heavy_check_mark: You can then run:
+
+```bash
+nvm cache clear
+```
+
+
+
+## yarn
+
+[`yarn`](https://yarnpkg.com/) is a package manager to install JavaScript libraries. Let's install it:
+
+In a terminal, run the following commands:
+
+```bash
+npm install --global yarn
+exec zsh
+```
+
+Then run the following command:
+
+```bash
+yarn -v
+```
+
+:heavy_check_mark: If you see a version, you're good :+1:
+
+## Setup completed!
+
+Your computer is now all set for [Le Wagon Web Development course](https://www.lewagon.com/web-development-course/full-time) :muscle: :clap:
+
+Enjoy the bootcamp, you will nail it :rocket:
 
 
 
