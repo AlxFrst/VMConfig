@@ -172,15 +172,19 @@ echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://
 sudo apt update && sudo apt install terraform
 ```
 
+if you get an error, try:
+
+```bash
+snap install terraform --classic
+```
+
 Then run the following command:
 
 ```bash
-
 terraform -v
 ```
 
 :heavy_check_mark: If you see a version, you're good :+1:
-
 
 
 ## Setup completed!
