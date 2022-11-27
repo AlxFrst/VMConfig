@@ -1,6 +1,6 @@
 # VM Setup istallation
 You will find here the steps to install best pre-configured VM for development.
-If you have any question or suggestion, please contact me at [email protected]
+If you have any question or suggestion, please contact me in issues section.
 
 Let's start 🚀
 
