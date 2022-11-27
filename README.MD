@@ -179,6 +179,10 @@ Then run the following command:
 terraform -v
 ```
 
+:heavy_check_mark: If you see a version, you're good :+1:
+
+
+
 ## Setup completed!
 
 Your computer is now all set for [Le Wagon Web Development course](https://www.lewagon.com/web-development-course/full-time) :muscle: :clap:
