@@ -9,6 +9,7 @@ Let's start 🚀
 - Desktop Environment: Gnome
 - Shell: Zsh
 
+
 ## Zsh & Git
 
 Instead of using the default `bash` [shell](https://en.wikipedia.org/wiki/Shell_(computing)), we will use `zsh`.
@@ -191,7 +192,7 @@ terraform -v
 
 Your computer is now all set for [Le Wagon Web Development course](https://www.lewagon.com/web-development-course/full-time) :muscle: :clap:
 
-Enjoy the bootcamp, you will nail it :rocket:
+Enjoy :rocket:
 
 
 
