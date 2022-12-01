@@ -26,6 +26,7 @@ sudo apt update
 
 ```bash
 sudo apt install -y curl git imagemagick jq unzip vim zsh tree
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 These commands will ask for your password: type it in.
