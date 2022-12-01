@@ -177,7 +177,7 @@ sudo apt update && sudo apt install terraform
 ⚠️ if you get an error, try:
 
 ```bash
-snap install terraform --classic
+sudo snap install terraform --classic
 ```
 
 Then run the following command:
