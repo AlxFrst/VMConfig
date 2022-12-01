@@ -67,7 +67,7 @@ First in order to **login**, copy-paste the following command in your terminal:
 :warning: **DO NOT edit the `email`**
 
 ```bash
-gh auth login -s 'user:email' -w
+gh auth login -s 'user:email'
 ```
 
 gh will ask you few questions:
