@@ -11,7 +11,7 @@ Let's start 🚀
 
 
 ## Oh My Zsh
-Now we will install Oh My Zsh, a framework for managing your Zsh configuration.
+Now we will install Oh My Zsh, a framework for managing yofur Zsh configuration.
 
 ```bash
 sudo apt update && sudo apt install -y curl imagemagick jq unzip vim zsh tree && sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
