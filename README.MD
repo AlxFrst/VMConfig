@@ -10,28 +10,27 @@ Let's start 🚀
 - Shell: Zsh
 
 
-## Zsh & Git
-
-Instead of using the default `bash` [shell](https://en.wikipedia.org/wiki/Shell_(computing)), we will use `zsh`.
-
-We will also use [`git`](https://git-scm.com/), a command line software used for version control.
-
-Let's install them, along with other useful tools:
-- Open an **Ubuntu terminal**
-- Copy and paste the following commands:
+## Oh My Zsh
+Now we will install Oh My Zsh, a framework for managing your Zsh configuration.
 
 ```bash
 sudo apt update
-```
-
-```bash
-sudo apt install -y curl git imagemagick jq unzip vim zsh tree
+sudo apt install -y curl imagemagick jq unzip vim zsh tree
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-These commands will ask for your password: type it in.
+Add Powerlevel10k theme to Oh My Zsh
+```bash
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+```
 
-:warning: When you type your password, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your password as a whole but also its length. Just type in your password and when you're done, press `Enter`.
+reload zsh
+```bash
+exec zsh
+```
+
+Nice! Now we have a beautiful terminal with a lot of features.
 
 ## GitHub CLI installation
 
@@ -40,6 +39,8 @@ Let's now install [GitHub official CLI](https://cli.github.com) (Command Line In
 In your terminal, copy-paste the following commands and type in your password if asked:
 
 ```bash
+sudo apt update
+sudo apt install git
 sudo apt remove -y gitsome # gh command can conflict with gitsome if already installed
 curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
@@ -73,36 +74,8 @@ gh auth login -s 'user:email'
 
 gh will ask you few questions:
 
-`What is your preferred protocol for Git operations?` With the arrows, choose `SSH` and press `Enter`. SSH is a protocol to log in using SSH keys instead of the well known username/password pair.
+- **What account do you want to log into?** :arrow_right: Select your GitHub account
 
-`Generate a new SSH key to add to your GitHub account?` Press `Enter` to ask gh to generate the SSH keys for you.
-
-If you already have SSH keys, you will see instead `Upload your SSH public key to your GitHub account?` With the arrows, select your public key file path and press `Enter`.
-
-`Enter a passphrase for your new SSH key (Optional)`. Type something you want and that you'll remember. It's a password to protect your private key stored on your hard drive. Then press `Enter`.
-
-:warning: When you type your passphrase, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your passphrase as a whole but also its length. Just type your passphrase and when you're done, press `Enter`.
-
-You will then get the following output:
-
-```bash
-! First copy your one-time code: 0EF9-D015
-- Press Enter to open github.com in your browser...
-```
-
-Select and copy the code (`0EF9-D015` in the example), then press `Enter`.
-
-Your browser will open and ask you to authorize GitHub CLI to use your GitHub account. Accept and wait a bit.
-
-Come back to the terminal, press `Enter` again, and that's it.
-
-To check that you are properly connected, type:
-
-```bash
-gh auth status
-```
-
-:heavy_check_mark: If you get `Logged in to github.com as <YOUR USERNAME> `, then all good :+1:
 
 ## Node.js
 
