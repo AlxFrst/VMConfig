@@ -14,24 +14,17 @@ Let's start 🚀
 Now we will install Oh My Zsh, a framework for managing your Zsh configuration.
 
 ```bash
-sudo apt update
-sudo apt install -y curl imagemagick jq unzip vim zsh tree
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sudo apt update && sudo apt install -y curl imagemagick jq unzip vim zsh tree && sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 :warning: Do this only if you want to use the theme powerlevel10k
 
 Add Powerlevel10k theme to Oh My Zsh
 ```bash
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
-echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k && echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc && exec zsh
 ```
 
-reload zsh
-```bash
-exec zsh
-```
-
+A prompt will appear, select your favorite configuration.
 Nice! Now we have a beautiful terminal with a lot of features.
 
 ## GitHub CLI installation
