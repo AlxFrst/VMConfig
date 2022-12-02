@@ -76,6 +76,17 @@ gh auth login -s 'user:email'
 ```
 
 gh will ask you few questions:
+- **What account do you want to log into?** GitHub.com
+- **What is your preferred protocol for Git operations?** HTTPS
+- **Authenticate Git with your GitHub credentials?** Y
+- **How would you like to authenticate?** Paste your authentication token
+
+On your github account, go to [Personal access tokens]( https://github.com/settings/tokens ) and generate a new token with all the permissions.
+Copy the token and paste it in your terminal.
+You should now be logged in.
+
+Nice! Now you can use `gh` to interact with GitHub directly from the terminal.
+
 
 - **What account do you want to log into?** :arrow_right: Select your GitHub account
 
