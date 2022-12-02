@@ -19,6 +19,8 @@ sudo apt install -y curl imagemagick jq unzip vim zsh tree
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
+:warning: Do this only if you want to use the theme powerlevel10k
+
 Add Powerlevel10k theme to Oh My Zsh
 ```bash
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
